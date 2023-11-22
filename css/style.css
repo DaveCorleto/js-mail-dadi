@@ -1,0 +1,20 @@
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../img/bg5icOd-dice-wallpaper.jpg);
+}
+
+.dadi-user, .dadi-pc {
+    width: 30%;
+    height: 80px;
+    color: white;
+    background-color: rgba(32, 5, 5, 0.404);
+    border-radius: 10px;
+    margin: auto;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+}

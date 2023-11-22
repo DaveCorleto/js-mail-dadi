@@ -40,3 +40,7 @@ const dadiPc = Math.floor (Math.random ()*6) +1;
 
 console.log(dadiPc);
 
+const dadiUser = Math.floor (Math.random ()*6) +1;
+
+console.log(dadiUser);
+
