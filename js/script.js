@@ -15,6 +15,20 @@
 
 // Chiedi all’utente la sua email... 
 
-const mail = prompt ("inserisci la tua mail");
+const mail = prompt ("inserisci la tua mail per ottenere udienza presso il circolo dei re invisibili");
 
 console.log(mail);
+
+// controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo. 
+
+// Creo una lista con una const array 
+
+const emailList = [ "genoveffa@gmail.com" , "asdrubale@gmail.com" , "sosipatro@gmail.com" , "clodomilda@gmail.com"]; 
+
+// Controllo che la mail inserita dall'utente sia inserita nell'elenco 
+
+if (emailList.includes(mail)){
+    alert("Benvenuto! Ti stavamo aspettando!") }
+
+    else {  alert ("Chi sei? Accesso negato!")
+}
