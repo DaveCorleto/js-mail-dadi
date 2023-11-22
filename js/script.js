@@ -36,11 +36,34 @@
 
 // Number Generator per PC 
 
-const dadiPc = Math.floor (Math.random ()*6) +1;
+let dadiPc = Math.floor (Math.random ()*6) +1;
 
 console.log(dadiPc);
 
-const dadiUser = Math.floor (Math.random ()*6) +1;
+let dadiUser = Math.floor (Math.random ()*6) +1;
 
 console.log(dadiUser);
 
+if (dadiPc > dadiUser) {
+    setTimeout(function() {
+        alert("Ha vinto il pc :( Riprova e sarai più fortunato");
+    }, 2000);
+    
+}
+else if (dadiUser > dadiPc) {
+    setTimeout(function(){  
+    alert("Congratulazioni! Hai vinto!")}, 2000);
+}
+
+else {
+    setTimeout(function(){  
+        alert("Pari Patta!")}, 2000);
+}
+
+let userScore = document.getElementById("user-score");
+
+userScore.innerHTML = "Il punteggio utente è: " + dadiUser;
+
+let pcScore = document.getElementById("pc-score");
+
+pcScore.innerHTML = "Il punteggio del pc è: " + dadiPc;
